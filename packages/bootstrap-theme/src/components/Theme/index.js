@@ -6,10 +6,10 @@ import {Header, List, Post, Loading, Title, PageError} from '../'
 
 import {globalStyles, HeadContainer, Main} from './styles'
 
-// import bootstrapUIStyles from 'bootstrap/dist/css/bootstrap.min.css';
-// const SemanticUIStyles = () => (
-//   <Global styles={css(bootstrapUIStyles)} />
-// );
+import bootstrapUIStyles from 'bootstrap/dist/css/bootstrap.min.css';
+const SemanticUIStyles = () => (
+  <Global styles={css(bootstrapUIStyles)} />
+);
 
 const Theme = ({ state }) => {
 
@@ -24,14 +24,9 @@ const Theme = ({ state }) => {
         <html lang="en" />
       </Head>
 
+      <SemanticUIStyles />
       <Global styles={globalStyles} />
-      {
-        /*
-        <SemanticUIStyles />
-        
-        */
-      }
-
+      
       <HeadContainer>
         <Header />
       </HeadContainer>
