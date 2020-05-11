@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { connect } from "frontity";
 
-import {List, FeaturedMedia} from "../";
+import List from '../List/'
+import FeaturedMedia from '../FeaturedMedia/'
+
 import {Container, Title, StyledLink, Author, Fecha, Content } from './styles'
 
 import {getAuthor, getPost} from '../../helpers/'
@@ -11,9 +13,7 @@ const Post = ({ state, actions, libraries }) => {
 
   const data = state.source.get(state.router.link);
   const {type, id} = data
-  console.log({type, id})
   const post = getPost(state)(type)(id)
-  console.log({post})
   const author = getAuthor(state)(post.author)
   const date = new Date(post.date);
   

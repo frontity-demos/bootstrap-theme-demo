@@ -1,4 +1,4 @@
-import {Theme} from "./components/";
+import Theme from "./components/Theme/";
 import image from "@frontity/html2react/processors/image";
 import iframe from '@frontity/html2react/processors/iframe';
 

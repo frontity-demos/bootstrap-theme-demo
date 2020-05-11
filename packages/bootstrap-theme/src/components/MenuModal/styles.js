@@ -1,5 +1,5 @@
 import { styled } from "frontity";
-import {Link} from "../";
+import Link from '../Link/'
 
 export const MenuOverlay = styled.div`
   background-color: #1f38c5;

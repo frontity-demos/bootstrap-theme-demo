@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { connect } from "frontity";
 
-import {Link} from "../";
+import Link from '../Link/'
+
 import {Text} from './styles'
 
 /**

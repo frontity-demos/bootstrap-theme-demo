@@ -1,7 +1,8 @@
 import React from "react";
 import { connect, Global } from "frontity";
 
-import { MenuModal } from "../";
+import MenuModal from '../MenuModal/'
+
 import {CloseIcon, HamburgerIcon} from "../MenuIcons";
 import {MenuToggle} from './styles'
 

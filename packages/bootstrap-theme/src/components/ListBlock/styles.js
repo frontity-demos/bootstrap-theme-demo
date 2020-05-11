@@ -6,7 +6,7 @@ export const Container = styled.section`
   list-style: none;
 `;
 
-export const Header = styled.h3`
+export const StyledHeader = styled.h3`
   font-weight: 300;
   text-transform: capitalize;
   color: rgba(12, 17, 43, 0.9);

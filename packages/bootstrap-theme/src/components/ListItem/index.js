@@ -1,7 +1,9 @@
 import React from "react";
 import { connect } from "frontity";
 
-import {Link, FeaturedMedia} from "../";
+import Link from '../Link/'
+import FeaturedMedia from '../FeaturedMedia/'
+
 import {Title, AuthorName, StyledLink, PublishDate, Excerpt} from './styles'
 
 /**

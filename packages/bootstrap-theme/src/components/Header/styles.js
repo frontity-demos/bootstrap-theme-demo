@@ -1,5 +1,5 @@
 import { styled } from "frontity";
-import {Link} from '../index'
+import Link from '../Link/'
 
 export const Container = styled.div`
   width: 800px;

@@ -1,7 +1,9 @@
 import React from "react";
 import { connect } from "frontity";
 
-import {Nav, MobileMenu} from "../";
+import Nav from '../Nav/'
+import MobileMenu from '../MobileMenu/'
+
 import {Container, Title, Description, StyledLink} from './styles'
 
 const Header = ({ state }) => {

@@ -12,6 +12,7 @@ export const getMedia = state => id => {
   return { media, srcset }
 }
 
+
 export const getTaxonomy = state => taxonomy => idTaxonomy => state.source[taxonomy][idTaxonomy];
 export const getTaxonomyCapitalized = taxonomy => taxonomy.charAt(0).toUpperCase() + taxonomy.slice(1);
 export const getAuthor = state => idAuthor => state.source.author[idAuthor]

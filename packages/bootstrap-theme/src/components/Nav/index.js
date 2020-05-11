@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "frontity";
 
-import {Link} from "../";
+import Link from '../Link/'
 import {NavContainer, NavItem} from './styles'
 
 const Nav = ({ state }) => (

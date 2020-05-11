@@ -1,5 +1,5 @@
 import { styled } from "frontity";
-import {Link} from '../'
+import Link from '../Link/'
 
 export const Title = styled.h1`
   font-size: 2rem;

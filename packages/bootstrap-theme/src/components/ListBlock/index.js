@@ -1,8 +1,10 @@
 import React from "react";
 import { connect, decode } from "frontity";
 
-import {ListItem, ListPagination} from "../";
-import {Container, Header} from './styles'
+import ListItem from '../ListItem/'
+import ListPagination from '../ListPagination/'
+
+import {Container, StyledHeader} from './styles'
 
 import {getTaxonomy, getAuthor} from '../../helpers/'
 
@@ -16,10 +18,10 @@ const List = ({ state }) => {
     const {taxonomy, id} = data
     const {name} = getTaxonomy(state)(taxonomy)(id)
     HeaderBlock = (
-      <Header>
+      <StyledHeader>
         {taxonomy}:{" "}
         <b>{decode(name)}</b>
-      </Header>
+      </StyledHeader>
     )
   }
 
@@ -36,7 +38,7 @@ const List = ({ state }) => {
 
   return (
     <Container>
-      {HeaderBlock && <HeaderBlock />}
+      {HeaderBlock}
 
       {data.items.map(({ type, id }) => {
         const item = state.source[type][id];
