@@ -17,7 +17,7 @@ import Title from '../Title/'
 import PageError from '../PageError/'
 
 import {globalStyles, HeadContainer, Main} from './styles'
-import ErrorBoundary from '../ErrorBoundary/'
+// import ErrorBoundary from '../ErrorBoundary/'
 
 import bootstrapCss from 'bootstrap/dist/css/bootstrap.min.css';
 const BootstrapStyles = () => (
