@@ -7,6 +7,7 @@ export const Container = styled.section`
 `;
 
 export const StyledHeader = styled.h3`
+  margin-top: 20px;
   font-weight: 300;
   text-transform: capitalize;
   color: rgba(12, 17, 43, 0.9);

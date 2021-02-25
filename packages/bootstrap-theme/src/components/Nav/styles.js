@@ -7,11 +7,15 @@ export const NavContainer = styled.nav`
   max-width: 100%;
   box-sizing: border-box;
   padding: 0 24px;
-  margin: 0;
+  margin-top: 20px;
   overflow-x: auto;
 
   @media screen and (max-width: 560px) {
     display: none;
+  }
+
+  a:hover {
+    color: white
   }
 `;
 

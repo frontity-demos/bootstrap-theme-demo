@@ -1,18 +1,17 @@
-import React from "react";
-import Loader from "react-spinners/ScaleLoader";
-
-import {Container} from './styles'
+import { Container, bar } from "./styles";
 
 const Loading = () => (
   <Container>
-    <Loader
-      color="rgba(12, 17, 43, 0.3)"
-      radius={0}
-      margin="3px"
-      width={4}
-      height={24}
-    />
+    <div>
+      <div css={bar(1)} />
+      <div css={bar(2)} />
+      <div css={bar(3)} />
+      <div css={bar(4)} />
+      <div css={bar(5)} />
+    </div>
   </Container>
 );
 
 export default Loading;
+
+

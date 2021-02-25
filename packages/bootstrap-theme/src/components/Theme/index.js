@@ -2,12 +2,7 @@ import React from "react";
 import { Global, css, connect, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 
-import { CacheProvider } from '@emotion/core'
-import createCache from '@emotion/cache'
-
-const myCache = createCache()
-myCache.compat = true
-
+import {fixCss} from '../../helpers/css'
 
 import Header from '../Header/'
 import List from '../List/'
@@ -17,11 +12,12 @@ import Title from '../Title/'
 import PageError from '../PageError/'
 
 import {globalStyles, HeadContainer, Main} from './styles'
-import ErrorBoundary from '../ErrorBoundary/'
 
 import bootstrapCss from 'bootstrap/dist/css/bootstrap.min.css';
+
+const fixedBootstrapCss = fixCss(bootstrapCss)
 const BootstrapStyles = () => (
-  <Global styles={css(bootstrapCss)} />
+  <Global styles={css(fixedBootstrapCss)} />
 );
 
 const Theme = ({ state }) => {
@@ -30,7 +26,7 @@ const Theme = ({ state }) => {
   const title = state.frontity.title;
 
   return (
-    <CacheProvider value={myCache}>
+    <>
       <Title />
       <Head>
         <meta name="description" content={state.frontity.description} />
@@ -52,7 +48,7 @@ const Theme = ({ state }) => {
           <PageError when={data.isError} />
         </Switch>
       </Main>
-    </CacheProvider>
+    </>
   );
 };
 
