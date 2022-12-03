@@ -2,7 +2,7 @@ const settings = {
   "name": "wpcamp-demo",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.io",
+      "url": "https://financialplanning-loans-and-insurance.co.za/test100/",
       "title": "Test Frontity Blog",
       "description": "WordPress installation for Frontity development"
     }
@@ -31,7 +31,7 @@ const settings = {
             ],
             [
               "About Us",
-              "/about-us/"
+              "/test100/about-us/"
             ]
           ],
           "featured": {
@@ -45,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://test.frontity.io/wp-json"
+          "api": "https://financialplanning-loans-and-insurance.co.za/test100/wp-json"
         }
       }
     },
