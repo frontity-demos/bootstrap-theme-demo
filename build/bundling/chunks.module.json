@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "191ace1157ab20c69788",
+  "publicPath": "/static/",
+  "outputPath": "C:\\_frontity\\bootstrap-frontity\\bootstrap-theme-demo\\build\\static",
+  "assetsByChunkName": {
+    "ListBlock": "ListBlock.module.js",
+    "wpcamp-demo": "wpcamp-demo.module.js"
+  },
+  "assets": [
+    {
+      "name": "ListBlock.module.js",
+      "size": 41917,
+      "chunks": [
+        "ListBlock"
+      ],
+      "chunkNames": [
+        "ListBlock"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "wpcamp-demo.module.js",
+      "size": 6824858,
+      "chunks": [
+        "wpcamp-demo"
+      ],
+      "chunkNames": [
+        "wpcamp-demo"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "wpcamp-demo": {
+      "chunks": [
+        "wpcamp-demo"
+      ],
+      "assets": [
+        "wpcamp-demo.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "wpcamp-demo": {
+      "chunks": [
+        "wpcamp-demo"
+      ],
+      "assets": [
+        "wpcamp-demo.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "ListBlock": {
+      "chunks": [
+        "ListBlock"
+      ],
+      "assets": [
+        "ListBlock.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "ListBlock",
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 16772,
+      "names": [
+        "ListBlock"
+      ],
+      "files": [
+        "ListBlock.module.js"
+      ],
+      "hash": "ba6e6dfc97bfda152c48",
+      "siblings": [],
+      "parents": [
+        "wpcamp-demo"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "wpcamp-demo",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1779628,
+      "names": [
+        "wpcamp-demo"
+      ],
+      "files": [
+        "wpcamp-demo.module.js"
+      ],
+      "hash": "cb7c76819ec863353bee",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "ListBlock"
+      ],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}
